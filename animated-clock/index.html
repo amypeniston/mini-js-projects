@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+	<link rel="shortcut icon" href="../favicon.png">
+	<title>Animated Clock</title>
+</head>
+
+<body>
+	<div id="wrapper">
+		<div id="time"><span></span></div>
+		<div id="clock-wrapper">
+			<svg width="300px" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 200 200">
+				<filter id="dropshadow" height="130%">
+				  <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+				  <feOffset dx="0" dy="0" result="offsetblur"/>
+				  <feComponentTransfer>
+				    <feFuncA type="linear" slope="0.3"/>
+				  </feComponentTransfer>
+				  <feMerge> 
+				    <feMergeNode/>
+				    <feMergeNode in="SourceGraphic"/>
+				  </feMerge>
+				</filter>
+				<circle id="clock" cx="100" cy="100" r="90" fill="white" stroke-width="4" stroke="white" opacity="0.8" stroke-opacity="1" style="filter:url(#dropshadow)"></circle>
+				<circle cx="100" cy="100" r="5" fill="black" stroke-width="2" stroke="black"></circle>
+				<line class="hand" id="hour-hand" x1="10" y1="100" x2="100" y2="100" stroke-width="5" stroke="black"></line>
+				<line class="hand" id="minute-hand" x1="10" y1="100" x2="100" y2="100" stroke-width="3" stroke="black"></line>
+				<line class="hand" id="second-hand" x1="10" y1="100" x2="100" y2="100" stroke-width="2" stroke="black"></line>
+			</svg>
+		</div>
+	</div>
+	<script src="main.js"></script>
+</body>
+</html>
