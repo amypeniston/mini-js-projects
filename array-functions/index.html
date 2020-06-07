@@ -17,12 +17,15 @@
     <hr>
 
     <h2>Filter</h2>
+    <p>Return only the objects matching certain criteria.</p>
     <pre><code>const filteredInventors = inventors.filter(inventor => (inventor.year >= 1500 && inventor.year < 1600));</code></pre>
 
     <h2>Map</h2>
+    <p>Transform an array into a new array.</p>
     <pre><code>const firstLastNames = inventors.map(inventor => `${inventor.first} ${inventor.last}`);</code></pre>
 
     <h2>Sort</h2>
+    <p>Re-order elements based on certain criteria.</p>
     <pre><code>const sortedInventors = inventors.sort((a, b) => (a.year > b.year) ? 1 : -1);</code></pre>
     <pre><code>const sortedInventorsByYears = inventors.sort((a, b) => {
       const prevInventor = a.passed - a.year;
@@ -36,6 +39,7 @@
     });</code></pre>
     
     <h2>Reduce</h2>
+    <p>Aggregate elements of an array.</p>
     <pre><code>const totalYearsLived = inventors.reduce((total, inventor) => {
       return total + (inventor.passed - inventor.year);
     }, 0);</code></pre>
