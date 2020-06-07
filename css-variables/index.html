@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS Variables</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="wrapper">
+		<h1>Adjust CSS Variables Using <span class="highlight">JavaScript</span></h1>
+		<p>Use the sliders & color picker below to style the image.</p>	
+		<div id="content">
+			<div id="left">
+				<div class="controller">
+					<h2>Offset:</h2>
+					<div class="controls">
+						<label for="offset" id="offset-label">0</label>
+						<input type="range" name="offset" id="offset" min="-50" max="50" value="0" data-units="px">
+					</div>
+				</div>
+				<div class="controller">
+					<h2>Blur:</h2>
+					<div class="controls">
+						<label for="blur" id="blur-label">0</label>
+						<input type="range" name="blur" id="blur" min="0" max="100" value="0"data-units="px">
+					</div>
+				</div>
+				<div class="controller">
+					<h2>Color:</h2>
+					<div class="controls">
+						<label for="image-background" id="image-background-label">#ffb416</label>
+						<input type="color" name="image-background" id="image-background" value="#ffb416">
+					</div>
+				</div>
+			</div>
+			<div id="right">
+				<div class="img-bg">
+					<img src="https://images.unsplash.com/photo-1494253109108-2e30c049369b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
+				</div>
+			</div>
+		</div>	
+	</div>
+	<script src="main.js"></script>
+</body>
+</html>
