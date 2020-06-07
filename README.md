@@ -5,7 +5,7 @@ Bite-sized JavaScript creations to review fundamentals.
 
 Play musical sounds using your keyboard.
 
-**Key concepts:** keydown & transitionend events, audio elements, data attributes, flexbox
+**Key concepts:** `keydown` & `transitionend` events, audio elements, data attributes, flexbox
 
 ## [animated-clock](https://amypeniston.github.io/mini-js-projects/animated-clock/)
 
