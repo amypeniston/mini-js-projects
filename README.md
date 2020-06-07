@@ -11,10 +11,16 @@ Play musical sounds using your keyboard.
 
 A minimalistic clock.
 
-**Key concepts:** SVG transforms, SVG opacity, time, setInterval
+**Key concepts:** SVG transforms, SVG opacity, time, `setInterval`
 
 ## [css-variables](https://amypeniston.github.io/mini-js-projects/css-variables/)
 
 Adjust CSS variables using JavaScript.
 
-**Key concepts:** CSS variables, slider, color picker, blur filter
+**Key concepts:** CSS variables, slider, color picker, `filter: blur`
+
+## [array-functions](https://amypeniston.github.io/mini-js-projects/array-functions/)
+
+Utilize JavaScript array functions to map, filter, sort and reduce.
+
+**Key concepts:** `map`, `filter`, `sort`, `reduce`, highlight.js, `console.table`
