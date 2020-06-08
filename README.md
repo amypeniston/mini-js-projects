@@ -1,4 +1,4 @@
-# Mini JS Projects
+# [Mini JS Projects](https://amypeniston.github.io/mini-js-projects/)
 Bite-sized JavaScript creations to review fundamentals. 
 
 ## [musical-keys](https://amypeniston.github.io/mini-js-projects/musical-keys/)\*
