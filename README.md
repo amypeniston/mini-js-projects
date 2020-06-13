@@ -25,6 +25,12 @@ Utilize JavaScript array functions to map, filter, sort and reduce.
 
 **Key concepts:** `map`, `filter`, `sort`, `reduce`, highlight.js, `console.table`
 
+## [flex-gallery](https://amypeniston.github.io/mini-js-projects/flex-gallery/)\*
+
+Enhance a flexbox gallery with text transitions and transformations.
+
+**Key concepts:** `transform: translateY`, flexbox
+
 ---
 
 \* *Inspired by [Wes Bos' #Javascript30 course](https://javascript30.com/).*
