@@ -1,5 +1,6 @@
 # [Mini JS Projects](https://amypeniston.github.io/mini-js-projects/)
-Bite-sized JavaScript creations to review fundamentals. 
+
+Bite-sized JavaScript creations to review fundamentals.
 
 ## [musical-keys](https://amypeniston.github.io/mini-js-projects/musical-keys/)\*
 
@@ -31,6 +32,12 @@ Enhance a flexbox gallery with text transitions and transformations.
 
 **Key concepts:** `transform: translateY`, flexbox
 
+## [reactive-search](https://amypeniston.github.io/mini-js-projects/reactive-search/)\*
+
+Fetch remote data and return search results dynamically, as the user enters a query.
+
+**Key concepts:** `fetch`, `transform: perspective`, `new RegExp`, creative uses of `map` and `replace` to create `html`.
+
 ---
 
-\* *Inspired by [Wes Bos' #Javascript30 course](https://javascript30.com/).*
+\* _Inspired by [Wes Bos' #Javascript30 course](https://javascript30.com/)._
