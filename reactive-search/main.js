@@ -11,22 +11,36 @@ fetch(endpoint).then((blob) => {
   });
 });
 
-function updateSearchResults(results) {
+function updateSearchResults() {
+  let results = findMatches(this.value, locationData);
   searchResults.textContent = "";
-  var newResults = document.createElement("ul");
-  for (let i = 0; i < results.length; i++) {
-    let resultText = `<span class="city">${results[i].city}</span><br><span class="state">${results[i].state}</span>`;
-    let resultNode = document.createElement("li");
-    resultNode.innerHTML = resultText;
-    newResults.appendChild(resultNode);
-  }
-  searchResults.appendChild(newResults);
+  let html = results
+    .map((result) => {
+      let regex = new RegExp(this.value, "gi");
+      let city = result.city.replace(
+        regex,
+        `<span class="highlight">${this.value}</span>`
+      );
+      let state = result.state.replace(
+        regex,
+        `<span class="highlight">${this.value}</span>`
+      );
+      return `
+      <li>
+        <span class="city">${city}</span>
+        <span class="state">${state}</span>
+      </li>
+    `;
+    })
+    .join("");
+  searchResults.innerHTML = html;
 }
 
-inputBox.addEventListener("input", (e) => {
-  let searchQuery = e.target.value.toLowerCase();
-  let results = locationData.filter((item) => {
-    return item.city.toLowerCase().includes(searchQuery);
+function findMatches(needle, haystack) {
+  return haystack.filter((item) => {
+    const regex = new RegExp(needle, "gi");
+    return item.city.match(regex) || item.state.match(regex);
   });
-  updateSearchResults(results);
-});
+}
+
+inputBox.addEventListener("input", updateSearchResults);
