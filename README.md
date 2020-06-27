@@ -38,6 +38,12 @@ Fetch remote data and return search results dynamically, as the user enters a qu
 
 **Key concepts:** `fetch`, `transform: perspective`, `new RegExp`, creative uses of `map` and `replace` to create `html`.
 
+## [html5-canvas](https://amypeniston.github.io/mini-js-projects/html5-canvas/)\*
+
+Drawing on an HTML 5 canvas using the mouse.
+
+**Key concepts:** `canvas`, programmatic hue, keyboard events.
+
 ---
 
 \* _Inspired by [Wes Bos' #Javascript30 course](https://javascript30.com/)._
