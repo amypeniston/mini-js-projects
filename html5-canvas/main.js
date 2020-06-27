@@ -5,7 +5,6 @@ const c = canvas.getContext("2d");
 c.lineWidth = 25;
 c.lineCap = "round";
 c.lineJoin = "round";
-c.globalCompositeOperation = "lighter";
 
 let hue = 0;
 let isDrawing = false;
