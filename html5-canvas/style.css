@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
 * {
   box-sizing: border-box;
 }
@@ -8,5 +10,31 @@ body {
   margin: 0;
 }
 
-canvas {
+#header {
+  font-family: "Pacifico", cursive;
+  position: absolute;
+  width: 100%;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    0deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(46, 105, 117, 1) 100%
+  );
+  padding: 1rem;
+  color: #fff;
+}
+
+h1 {
+  margin: 0;
+}
+
+#header ul {
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+#header ul li {
+  margin-left: 1rem;
 }
