@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: black;
+  background-image: radial-gradient(
+      white,
+      rgba(234, 231, 122, 0.4) 2px,
+      transparent 0px
+    ),
+    radial-gradient(#fff938, rgba(234, 231, 122, 0.4) 1px, transparent 0px),
+    radial-gradient(#fff938, rgba(234, 231, 122, 0.1) 2px, transparent 0px),
+    radial-gradient(
+      rgba(234, 231, 122, 0.4),
+      rgba(234, 231, 122, 0.1) 2px,
+      transparent 0px
+    );
+  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+  background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+}
+
+form {
+  margin: 0 auto;
+  display: inline-block;
+  padding: 2rem;
+}
+
+label {
+  color: #fff938;
+  font-size: 2.5rem;
+  font-weight: bold;
+  position: relative;
+  vertical-align: middle;
+}
+
+input {
+  width: 20px;
+  vertical-align: middle;
+}
+
+.inline-field {
+  padding: 1rem 0;
+}
+
+button {
+  display: inline-block;
+  margin: 1rem auto;
+  background: #fff938;
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  border: none;
+  padding: 1rem;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  position: relative;
+}
+
+button:first-of-type {
+  margin-right: 1rem;
+}
+
+button:hover {
+  bottom: 1px;
+}
+
+button:active {
+  top: 1px;
+  outline: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+.center {
+  text-align: center;
+}
