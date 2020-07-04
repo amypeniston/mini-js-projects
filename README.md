@@ -44,6 +44,12 @@ Drawing on an HTML 5 canvas using the mouse.
 
 **Key concepts:** `canvas`, programmatic hue, keyboard events.
 
+## [shift-select-list](https://amypeniston.github.io/mini-js-projects/shift-select-list/)\*
+
+Hold shift to check a range of checkboxes.
+
+**Key concepts:** `e.shiftKey`, checkboxes.
+
 ---
 
 \* _Inspired by [Wes Bos' #Javascript30 course](https://javascript30.com/)._
