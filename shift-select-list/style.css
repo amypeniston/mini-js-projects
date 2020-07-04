@@ -22,10 +22,11 @@ body {
   background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
 }
 
-form {
+#list {
   margin: 0 auto;
-  display: inline-block;
+  display: block;
   padding: 2rem;
+  width: 800px;
 }
 
 label {
