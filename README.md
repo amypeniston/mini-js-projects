@@ -50,6 +50,12 @@ Hold shift to check a range of checkboxes.
 
 **Key concepts:** `e.shiftKey`, checkboxes.
 
+## [web-components](https://amypeniston.github.io/mini-js-projects/web-components/)
+
+Creating a basic counter web component using vanilla JS.
+
+**Key concepts:** Classes that extend `HTMLElement`, shadowDOM, lifecycle methods, properties (in JS) vs. attributes (in HTML).
+
 ---
 
 \* _Inspired by [Wes Bos' #Javascript30 course](https://javascript30.com/)._
